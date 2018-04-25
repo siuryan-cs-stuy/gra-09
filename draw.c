@@ -152,6 +152,7 @@ void draw_polygons(struct matrix *polygons, screen s, zbuffer zb, color c ) {
 
         if ( normal[2] > 0 ) {
 
+            /*
             draw_line( polygons->m[0][point],
                        polygons->m[1][point],
                        polygons->m[2][point],
@@ -173,6 +174,7 @@ void draw_polygons(struct matrix *polygons, screen s, zbuffer zb, color c ) {
                        polygons->m[1][point+2],
                        polygons->m[2][point+2],
                        s, zb, c);
+            */
 
             scanline_convert(polygons, point / 3, s, zb);
         }
